@@ -1,6 +1,8 @@
 # Sistema de Mensageria Segura E2E
 **Alunos:** Halyson Lima, João Victor Bráz
+
 [github](https://github.com/cxrphly/seginfo-e2emsgr)
+
 **Junho 2026**
 
 ## 1. Visão Geral

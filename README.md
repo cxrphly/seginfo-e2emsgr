@@ -1,6 +1,8 @@
 # Sistema de Mensageria Segura E2E
 **Alunos:** Halyson Lima, João Victor Bráz
+[github](https://github.com/cxrphly/seginfo-e2emsgr)
 **Junho 2026**
+
 ## 1. Visão Geral
 Sistema de mensageria multi-cliente com criptografia ponta-a-ponta (E2E). O servidor atua como relay opaco, nunca decifrando mensagens. Segurança baseada em handshake autenticado e derivação de chaves simétricas.
 

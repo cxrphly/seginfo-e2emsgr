@@ -1,8 +1,7 @@
 # Sistema de Mensageria Segura E2E
 **Alunos:** Halyson Lima, João Victor Bráz
 **Junho 2026**
-## 1. Visão Geral {#visão-geral}
-
+## 1. Visão Geral
 Sistema de mensageria multi-cliente com criptografia ponta-a-ponta (E2E). O servidor atua como relay opaco, nunca decifrando mensagens. Segurança baseada em handshake autenticado e derivação de chaves simétricas.
 
 ### Arquitetura
@@ -19,7 +18,7 @@ Sistema de mensageria multi-cliente com criptografia ponta-a-ponta (E2E). O serv
 ```
 
 
-## 2. Conceitos de Segurança {#conceitos}
+## 2. Conceitos de Segurança
 
 ### 2.1 Criptografia Assimétrica - RSA
 
@@ -520,7 +519,7 @@ cert.sign(sk, hashes.SHA256())
 **AAD** = `sender_id || recipient_id || seq_no`
 
 
-## 3. Estrutura do Projeto {#estrutura}
+## 3. Estrutura do Projeto
 
 ```
 tp3-mensageria/
@@ -552,7 +551,7 @@ tp3-mensageria/
 └── server.crt           # Certificado do servidor (gerado)
 ```
 
-## 4. Testes {#testes}
+## 4. Testes
 
 ### Resumo dos Testes
 
@@ -571,23 +570,9 @@ python3 test_security.py
 
 ### Saída Esperada
 
-```
-============================================================
-  Testes de Segurança
-============================================================
-[1] Troca E2E entre dois clientes...
-  Mensagem decifrada: b'Ola, mundo seguro!'  [PASSOU]
-[2] Bitflip no ciphertext (deve rejeitar)...
-  Tag GCM invalida - mensagem rejeitada  [PASSOU]
-[3] Replay de frame (seq_no duplicado)...
-  Replay bloqueado pelo servidor  [PASSOU]
-[4] Frame com tamanho declarado incorreto...
-  Servidor encerrou a conexão  [PASSOU]
-============================================================
-```
+![saida testes](image.png)
 
-
-## 5. Como Executar {#executar}
+## 5. Como Executar
 
 ### Pré-requisitos
 
